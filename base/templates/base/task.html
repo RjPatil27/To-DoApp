@@ -1,0 +1,15 @@
+{% extends 'base/main.html' %}
+{% block content %}
+
+<div class="header-bar" style="align-items: center;">
+    <h1>{{task}}</h1>
+</div>
+
+<div class="detail-body">
+    <h3>{{task.description}}</h3>
+    <a href="{% url 'tasks' %}">&#8592; Back</a>
+</div>
+
+
+
+{% endblock content %}
